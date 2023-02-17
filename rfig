@@ -1,0 +1,6 @@
+cd ~/figlet-fonts
+font=$(ls | shuf -n 1)
+figlet -tcf "$font" $1
+echo $font
+
+
