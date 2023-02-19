@@ -51,6 +51,9 @@ client.background       #2B2C2B
 # =================
 # program launchers
 # =================
+bindsym $mod+slash exec --no-startup-id rofi -show run
+bindsym $mod+Shift+slash exec --no-startup-id rofi -show window
+
 bindsym $mod+Return exec kitty
 bindsym $mod+n exec firefox
 bindsym $mod+Shift+d exec discord
