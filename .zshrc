@@ -107,5 +107,5 @@ alias dir="sl -e"
 alias winfetch="neofetch --ascii_distro windows7"
 alias vim=nvim
 
-figlet -t cici@lyric
+~/.startup-msg.sh
 
