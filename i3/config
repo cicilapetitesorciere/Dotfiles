@@ -62,15 +62,13 @@ bindsym $mod+Shift+d exec discord
 # system
 # ======
 bindsym $mod+Shift+q kill
-bindsym XF86MonBrightnessUp exec "brightnessctl set $(($(brightnessctl get)*2+1))" 
-bindsym XF86MonBrightnessDown exec "brightnessctl set $(($(brightnessctl get)/2+1))" 
+bindsym XF86MonBrightnessUp exec "~/.config/i3/brightness-up.sh" 
+bindsym XF86MonBrightnessDown exec "~/.config/i3/brightness-down.sh" 
 bindsym XF86AudioMute exec "amxier set Master 0; amixer set Master toggle" 
-bindsym Shift+XF86AudioRaiseVolume exec "amixer set Master 3%+"
-bindsym Shift+XF86AudioLowerVolume exec "amixer set Master 2%-"
-bindsym XF86AudioRaiseVolume exec "amixer set Master 5%+; mpg123 /home/cici/.config/sway/pop.mp3"
-bindsym XF86AudioLowerVolume exec "amixer set Master 4%-; mpg123 /home/cici/.config/sway/pop.mp3"
+bindsym XF86AudioRaiseVolume exec "amixer set Master 5%+"
+bindsym XF86AudioLowerVolume exec "amixer set Master 4%-"
 
-bindsym $mod+Escape exec slock 
+bindsym $mod+Escape exec "i3lock -up win -i ~/.config/i3/windows95.png"
 
 bindsym Print --release exec --no-startup-id flameshot gui
 
@@ -151,4 +149,5 @@ exec --no-startup-id picom -b
 exec --no-startup-id pulseeffects -l bassss
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec ~/.config/i3/bg
-exec "unclutter --timeout 0.2"
+exec "unclutter --timeout 0.2 --exclude-root"
+exec kitty
