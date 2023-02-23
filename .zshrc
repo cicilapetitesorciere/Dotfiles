@@ -100,6 +100,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export PATH=~/.local/bin:$PATH
+
 alias q=exit
 alias ls="ls -ghNX --color=always"
 alias lst="ls -rtc"

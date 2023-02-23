@@ -21,7 +21,7 @@ bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
-bindsym $mod+f fullscreen
+bindsym $mod+f fullscreen 
 
 bindsym $mod+Shift+space floating toggle
 
@@ -64,9 +64,9 @@ bindsym $mod+Shift+d exec discord
 bindsym $mod+Shift+q kill
 bindsym XF86MonBrightnessUp exec "~/.config/i3/brightness-up.sh" 
 bindsym XF86MonBrightnessDown exec "~/.config/i3/brightness-down.sh" 
-bindsym XF86AudioMute exec "amxier set Master 0; amixer set Master toggle" 
-bindsym XF86AudioRaiseVolume exec "amixer set Master 5%+"
-bindsym XF86AudioLowerVolume exec "amixer set Master 4%-"
+bindsym XF86AudioMute exec "amixer set Master 0%" 
+bindsym XF86AudioRaiseVolume exec "amixer set Master 5%+; notify-send -t 500 Volume Up" 
+bindsym XF86AudioLowerVolume exec "amixer set Master 4%-; notify-send -t 500 Volume Down"
 
 bindsym $mod+Escape exec "i3lock -up win -i ~/.config/i3/windows95.png"
 
@@ -150,4 +150,6 @@ exec --no-startup-id pulseeffects -l bassss
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec ~/.config/i3/bg
 exec "unclutter --timeout 0.2 --exclude-root"
-exec kitty
+exec dunst
+exec 'batsignal -b -D "systemctl suspend" -C "notify-send Battery Critical" -W "notify-send Battery Warning"'
+
