@@ -64,11 +64,11 @@ bindsym $mod+Shift+d exec discord
 bindsym $mod+Shift+q kill
 bindsym XF86MonBrightnessUp exec "~/.config/i3/brightness-up.sh" 
 bindsym XF86MonBrightnessDown exec "~/.config/i3/brightness-down.sh" 
-bindsym XF86AudioMute exec "amixer set Master 0%" 
-bindsym XF86AudioRaiseVolume exec "amixer set Master 5%+; notify-send -t 500 Volume Up" 
-bindsym XF86AudioLowerVolume exec "amixer set Master 4%-; notify-send -t 500 Volume Down"
+bindsym XF86AudioMute exec "~/.config/i3/volume-mute.sh" 
+bindsym XF86AudioRaiseVolume exec "~/.config/i3/volume-up.sh"
+bindsym XF86AudioLowerVolume exec "~/.config/i3/volume-down.sh"
 
-bindsym $mod+Escape exec "i3lock -up win -i ~/.config/i3/windows95.png"
+bindsym $mod+Escape exec "~/.config/i3/lock.sh"
 
 bindsym Print --release exec --no-startup-id flameshot gui
 
@@ -141,15 +141,10 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-# =========
-# autostart
-# =========
-exec_always --no-startup-id ~/.config/xborders/xborders -c ~/.config/xborders/config.json
-exec --no-startup-id picom -b
-exec --no-startup-id pulseeffects -l bassss
-exec_always --no-startup-id ~/.config/polybar/launch.sh
-exec ~/.config/i3/bg
-exec "unclutter --timeout 0.2 --exclude-root"
-exec dunst
-exec 'batsignal -b -D "systemctl suspend" -C "notify-send Battery Critical" -W "notify-send Battery Warning"'
+# =======================
+# autostart & alwaysstart
+# =======================
 
+exec "~/.config/i3/autostart.sh"
+exec_always "~/.config/xborders/xborders -c ~/.config/xborders/config.json"
+exec_always "~/.config/polybar/launch.sh"

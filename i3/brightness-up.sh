@@ -1,3 +1,4 @@
+#!/bin/bash
 current_brightness=$(brightnessctl get)
 brightnessctl set 100%
 sleep 0.1
