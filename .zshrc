@@ -103,11 +103,16 @@ source $ZSH/oh-my-zsh.sh
 export PATH=~/.local/bin:$PATH
 
 alias q=exit
+alias d=disown
+alias bxit="bg;disown;exit"
 alias ls="ls -ghNX --color=always"
 alias lst="ls -rtc"
 alias dir="sl -e"
+alias anki="anki -b ~/Documents/anki"
 alias winfetch="neofetch --ascii_distro windows7"
 alias vim=nvim
+alias bcs="brightnessctl set"
+alias downloads="dir -tr ~/Downloads"
 
 ~/.startup-msg.sh
 
