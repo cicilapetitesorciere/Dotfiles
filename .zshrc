@@ -113,6 +113,8 @@ alias winfetch="neofetch --ascii_distro windows7"
 alias vim=nvim
 alias bcs="brightnessctl set"
 alias downloads="ls -tr ~/Downloads"
+alias trash="mv -t ~/Trash"
+alias empty-trash="rm -rf ~/Trash/*"
 
 ~/.startup-msg.sh
 
