@@ -112,7 +112,7 @@ alias anki="anki -b ~/Documents/anki"
 alias winfetch="neofetch --ascii_distro windows7"
 alias vim=nvim
 alias bcs="brightnessctl set"
-alias downloads="dir -tr ~/Downloads"
+alias downloads="ls -tr ~/Downloads"
 
 ~/.startup-msg.sh
 
