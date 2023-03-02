@@ -115,6 +115,7 @@ alias bcs="brightnessctl set"
 alias downloads="ls -tr ~/Downloads"
 alias trash="mv -t ~/Trash"
 alias empty-trash="rm -rf ~/Trash/*"
+alias pacman="sudo pacman"
 
 ~/.startup-msg.sh
 
