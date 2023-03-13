@@ -112,7 +112,10 @@ alias anki="anki -b ~/Documents/anki"
 alias winfetch="neofetch --ascii_distro windows7"
 #alias vim=nvim
 alias bcs="brightnessctl set"
-alias downloads="dir -tr ~/Downloads"
+alias downloads="ls -tr ~/Downloads"
+alias trash="mv -t ~/Trash"
+alias empty-trash="rm -rf ~/Trash/*"
+alias pacman="sudo pacman"
 
 ~/.startup-msg.sh
 
