@@ -116,6 +116,7 @@ alias downloads="ls -tr ~/Downloads"
 alias trash="mv -t ~/Trash"
 alias empty-trash="rm -rf ~/Trash/*"
 alias pacman="sudo pacman"
+alias open=xdg-open
 
 ~/.startup-msg.sh
 
