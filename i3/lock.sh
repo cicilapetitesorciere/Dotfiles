@@ -1,2 +1,2 @@
 #!/bin/bash
-i3lock -up win -i ~/.config/i3/wallpapers/windows95.png
+i3lock -eup win -i ~/.config/i3/wallpapers/windows95.png
