@@ -110,12 +110,13 @@ alias lst="ls -rtc"
 alias dir="sl -e"
 alias anki="anki -b ~/Documents/anki"
 alias winfetch="neofetch --ascii_distro windows7"
-#alias vim=nvim
+alias nv=nvim
 alias bcs="brightnessctl set"
 alias downloads="ls -tr ~/Downloads"
 alias trash="mv -t ~/Trash"
 alias empty-trash="rm -rf ~/Trash/*"
 alias pacman="sudo pacman"
+alias open=xdg-open
 
 ~/.startup-msg.sh
 
