@@ -117,6 +117,10 @@ alias trash="mv -t ~/Trash"
 alias empty-trash="rm -rf ~/Trash/*"
 alias pacman="sudo pacman"
 alias open=xdg-open
+alias darker="sh ~/Dotfiles/i3/brightness-down.sh"
+alias brighter="sh ~/Dotfiles/i3/brightness-up.sh"
+alias louder="sh ~/Dotfiles/i3/volume-up.sh"
+alias quieter="sh ~/Dotfiles/i3/volume-down.sh"
 
 ~/.startup-msg.sh
 
