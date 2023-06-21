@@ -27,16 +27,16 @@ bindsym $mod+Shift+space floating toggle
 
 bindsym $mod+a focus parent
 
-default_border pixel 0
-default_floating_border pixel 0
-for_window [class="^.*"] border pixel 0
+default_border pixel 5
+default_floating_border pixel 5
+for_window [class="^.*"] border pixel 2
 
 hide_edge_borders none
 
 font xft:JetBrains Mono 11
 
 gaps inner 20
-gaps outer -2
+gaps outer 2
 smart_gaps off
 smart_borders on
 
@@ -54,7 +54,7 @@ client.background       #2B2C2B
 bindsym $mod+slash exec --no-startup-id rofi -show run
 bindsym $mod+Shift+slash exec --no-startup-id rofi -show window
 
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+Return exec cool-retro-term
 bindsym $mod+n exec firefox
 bindsym $mod+Shift+d exec discord
