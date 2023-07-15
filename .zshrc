@@ -121,7 +121,7 @@ alias darker="sh ~/Dotfiles/i3/brightness-down.sh"
 alias brighter="sh ~/Dotfiles/i3/brightness-up.sh"
 alias louder="sh ~/Dotfiles/i3/volume-up.sh"
 alias quieter="sh ~/Dotfiles/i3/volume-down.sh"
-alias sioyek="sioyek --new-window"
+alias sioyek="XDG_SESSION_TYPE=x11 sioyek --new-window"
 alias rstudio=rstudio-bin
 ~/.startup-msg.sh
 
