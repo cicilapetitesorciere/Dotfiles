@@ -48,9 +48,6 @@ bindsym $mod+Shift+d exec discord
 bindsym $mod+Shift+q kill
 bindsym XF86MonBrightnessUp exec "~/.config/sway/brightness-up.sh" 
 bindsym XF86MonBrightnessDown exec "~/.config/sway/brightness-down.sh" 
-bindsym XF86AudioMute exec "~/.config/sway/volume-mute.sh" 
-bindsym XF86AudioRaiseVolume exec "~/.config/sway/volume-up.sh"
-bindsym XF86AudioLowerVolume exec "~/.config/sway/volume-down.sh"
 
 bindsym $mod+Escape exec "~/.config/sway/lock.sh"
 
@@ -59,6 +56,10 @@ bindsym Print --release exec --no-startup-id grimshot copy area
 # ==========
 # workspaces
 # ==========
+output HDMI-A-1 pos 0 350
+output HDMI-A-2 pos 1360 0
+output DP-3 pos 3280 100
+
 workspace 1 output HDMI-A-1
 workspace 2 output HDMI-A-1
 workspace 3 output HDMI-A-1

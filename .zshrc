@@ -122,11 +122,10 @@ alias brighter="sh ~/Dotfiles/i3/brightness-up.sh"
 alias louder="sh ~/Dotfiles/i3/volume-up.sh"
 alias quieter="sh ~/Dotfiles/i3/volume-down.sh"
 alias sioyek="sioyek --new-window"
-alias rstudio=rstudio-bin
 ~/.startup-msg.sh
 
 
-[ -f "/home/cici/.ghcup/env" ] && source "/home/cici/.ghcup/env" # ghcup-env
+#[ -f "/home/cici/.ghcup/env" ] && source "/home/cici/.ghcup/env" # ghcup-env
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -143,3 +142,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+[ -f "/home/cici/.ghcup/env" ] && source "/home/cici/.ghcup/env" # ghcup-env
