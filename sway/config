@@ -129,7 +129,7 @@ bindsym $mod+r mode "resize"
 # autostart & alwaysstart
 # =======================
 
-seat seat0 hide_cursor 200
+seat seat0 hide_cursor when-typing enabled
 exec "~/.config/sway/autostart.sh"
 include style
 bar {
