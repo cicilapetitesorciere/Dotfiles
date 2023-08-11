@@ -35,7 +35,7 @@ gaps inner 10
 # =================
 # program launchers
 # =================
-bindsym $mod+slash exec wofi --show run
+bindsym $mod+slash exec fuzzel
 
 bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+Return exec cool-retro-term
@@ -138,7 +138,7 @@ bindsym $mod+r mode "resize"
 # autostart & alwaysstart
 # =======================
 
-seat seat0 hide_cursor 200
+seat seat0 hide_cursor when-typing enable
 exec "~/.config/sway/autostart.sh"
 include style
 bar {
