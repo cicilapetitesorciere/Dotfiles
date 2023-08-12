@@ -1,3 +1,3 @@
 #!/bin/bash
 dunst &
-batsignal -b -D "systemctl suspend" -C "notify-send Battery Critical" -W "notify-send Battery Warning" &
+pactl set-sink-volume @DEFAULT_SINK@ 100% &

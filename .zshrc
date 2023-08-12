@@ -126,7 +126,7 @@ alias rstudio=rstudio-bin
 ~/.startup-msg.sh
 
 
-[ -f "/home/cici/.ghcup/env" ] && source "/home/cici/.ghcup/env" # ghcup-env
+#[ -f "/home/cici/.ghcup/env" ] && source "/home/cici/.ghcup/env" # ghcup-env
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -143,3 +143,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+[ -f "/home/cici/.ghcup/env" ] && source "/home/cici/.ghcup/env" # ghcup-env
