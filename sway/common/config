@@ -24,6 +24,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+f fullscreens
 
 bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
 
 bindsym $mod+a focus parent
 bindsym $mod+d focus child
