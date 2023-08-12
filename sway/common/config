@@ -47,7 +47,7 @@ bindsym $mod+Shift+d exec discord
 # system
 # ======
 bindsym $mod+Shift+q kill
-bindsym $mod+Escape exec "~/.config/sway/lock.sh"
+bindsym $mod+Escape exec "sh ~/.config/sway/lock.sh"
 
 # =================
 # window navigation
