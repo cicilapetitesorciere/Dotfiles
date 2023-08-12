@@ -35,11 +35,11 @@ gaps inner 10
 # =================
 # program launchers
 # =================
-bindsym $mod+slash exec fuzzel -T "alacritty -e"
+for_window [app_id="kitty"] fullscreen enable
 
+bindsym $mod+slash exec fuzzel -T "alacritty -e"
 bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+Return exec kitty
-for_window [app_id="kitty"] fullscreen enable
 bindsym $mod+n exec firefox --new-window "https://learn.uwaterloo.ca/d2l/home" 
 bindsym $mod+Shift+d exec discord
 
