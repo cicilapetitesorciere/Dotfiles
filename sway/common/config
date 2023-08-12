@@ -21,7 +21,7 @@ bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
-bindsym $mod+f fullscreen 
+bindsym $mod+f fullscreens
 
 bindsym $mod+Shift+space floating toggle
 
@@ -47,49 +47,7 @@ bindsym $mod+Shift+d exec discord
 # system
 # ======
 bindsym $mod+Shift+q kill
-bindsym XF86MonBrightnessUp exec "~/.config/sway/brightness-up.sh" 
-bindsym XF86MonBrightnessDown exec "~/.config/sway/brightness-down.sh" 
-
 bindsym $mod+Escape exec "~/.config/sway/lock.sh"
-
-bindsym Print --release exec --no-startup-id grimshot copy area
-
-# ==========
-# workspaces
-# ==========
-output HDMI-A-1 pos 0 350
-output HDMI-A-2 pos 1360 0
-output DP-3 pos 3280 100
-
-workspace 1 output HDMI-A-1
-workspace 2 output HDMI-A-1
-workspace 3 output HDMI-A-1
-workspace 4 output HDMI-A-2
-workspace 5 output HDMI-A-2
-workspace 6 output HDMI-A-2
-workspace 7 output DP-3
-workspace 8 output DP-3
-workspace 9 output DP-3
-
-bindsym $mod+KP_1 workspace number 1
-bindsym $mod+KP_2 workspace number 2
-bindsym $mod+KP_3 workspace number 3
-bindsym $mod+KP_4 workspace number 4
-bindsym $mod+KP_5 workspace number 5
-bindsym $mod+KP_6 workspace number 6
-bindsym $mod+KP_7 workspace number 7
-bindsym $mod+KP_8 workspace number 8
-bindsym $mod+KP_9 workspace number 9
-
-bindsym $mod+Control+KP_1 move container to workspace number 1; workspace number 1
-bindsym $mod+Control+KP_2 move container to workspace number 2; workspace number 2
-bindsym $mod+Control+KP_3 move container to workspace number 3; workspace number 3
-bindsym $mod+Control+KP_4 move container to workspace number 4; workspace number 4
-bindsym $mod+Control+KP_5 move container to workspace number 5; workspace number 5
-bindsym $mod+Control+KP_6 move container to workspace number 6; workspace number 6
-bindsym $mod+Control+KP_7 move container to workspace number 7; workspace number 7
-bindsym $mod+Control+KP_8 move container to workspace number 8; workspace number 8
-bindsym $mod+Control+KP_9 move container to workspace number 9; workspace number 9
 
 # =================
 # window navigation
@@ -141,7 +99,7 @@ bindsym $mod+r mode "resize"
 
 seat seat0 hide_cursor when-typing enabled
 exec "~/.config/sway/autostart.sh"
-include style
+include ../style
 bar {
     swaybar_command waybar
 }
