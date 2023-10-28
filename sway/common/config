@@ -41,7 +41,7 @@ for_window [app_id="kitty"] fullscreen enable
 bindsym $mod+slash exec fuzzel -T "alacritty -e"
 bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+Return exec kitty
-bindsym $mod+n exec firefox --new-window "https://learn.uwaterloo.ca/d2l/home" 
+bindsym $mod+n exec firefox --new-window "https://www.google.com/" 
 bindsym $mod+Shift+d exec discord
 
 # ======
@@ -92,7 +92,12 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
+
 bindsym $mod+r mode "resize"
+
+bindsym $mod+KP_1 mode "left"
+bindsym $mod+KP_2 mode "centre"
+bindsym $mod+KP_3 mode "right"
 
 # =======================
 # autostart & alwaysstart

@@ -8,36 +8,112 @@ set $mod Mod4
 # ==========
 # workspaces
 # ==========
+
 output HDMI-A-1 pos 0 350
 output HDMI-A-2 pos 1360 0
 output DP-3 pos 3280 100
 
-workspace 1 output HDMI-A-1
-workspace 2 output HDMI-A-1
-workspace 3 output HDMI-A-1
-workspace 4 output HDMI-A-2
-workspace 5 output HDMI-A-2
-workspace 6 output HDMI-A-2
-workspace 7 output DP-3
-workspace 8 output DP-3
-workspace 9 output DP-3
+workspace 11 output HDMI-A-1
+workspace 12 output HDMI-A-1
+workspace 13 output HDMI-A-1
+workspace 14 output HDMI-A-1
+workspace 15 output HDMI-A-1
+workspace 16 output HDMI-A-1
+workspace 17 output HDMI-A-1
+workspace 18 output HDMI-A-1
+workspace 19 output HDMI-A-1
 
-bindsym $mod+KP_1 workspace number 1
-bindsym $mod+KP_2 workspace number 2
-bindsym $mod+KP_3 workspace number 3
-bindsym $mod+KP_4 workspace number 4
-bindsym $mod+KP_5 workspace number 5
-bindsym $mod+KP_6 workspace number 6
-bindsym $mod+KP_7 workspace number 7
-bindsym $mod+KP_8 workspace number 8
-bindsym $mod+KP_9 workspace number 9
+workspace 21 output HDMI-A-2
+workspace 22 output HDMI-A-2
+workspace 23 output HDMI-A-2
+workspace 24 output HDMI-A-2
+workspace 25 output HDMI-A-2
+workspace 26 output HDMI-A-2
+workspace 27 output HDMI-A-2
+workspace 28 output HDMI-A-2
+workspace 29 output HDMI-A-2
 
-bindsym $mod+Control+KP_1 move container to workspace number 1; workspace number 1
-bindsym $mod+Control+KP_2 move container to workspace number 2; workspace number 2
-bindsym $mod+Control+KP_3 move container to workspace number 3; workspace number 3
-bindsym $mod+Control+KP_4 move container to workspace number 4; workspace number 4
-bindsym $mod+Control+KP_5 move container to workspace number 5; workspace number 5
-bindsym $mod+Control+KP_6 move container to workspace number 6; workspace number 6
-bindsym $mod+Control+KP_7 move container to workspace number 7; workspace number 7
-bindsym $mod+Control+KP_8 move container to workspace number 8; workspace number 8
-bindsym $mod+Control+KP_9 move container to workspace number 9; workspace number 9
+workspace 31 output DP-3
+workspace 32 output DP-3
+workspace 33 output DP-3
+workspace 34 output DP-3
+workspace 35 output DP-3
+workspace 36 output DP-3
+workspace 37 output DP-3
+workspace 38 output DP-3
+workspace 39 output DP-3
+
+bindsym $mod+1 workspace number 21
+bindsym $mod+2 workspace number 22
+bindsym $mod+3 workspace number 23
+bindsym $mod+4 workspace number 24
+bindsym $mod+5 workspace number 25
+bindsym $mod+6 workspace number 26
+bindsym $mod+7 workspace number 27
+bindsym $mod+8 workspace number 28
+bindsym $mod+9 workspace number 29
+
+bindsym $mod+Shift+1 move container to workspace number 21; workspace number 21
+bindsym $mod+Shift+2 move container to workspace number 22; workspace number 22
+bindsym $mod+Shift+3 move container to workspace number 23; workspace number 23
+bindsym $mod+Shift+4 move container to workspace number 24; workspace number 24
+bindsym $mod+Shift+5 move container to workspace number 25; workspace number 25
+bindsym $mod+Shift+6 move container to workspace number 26; workspace number 26
+bindsym $mod+Shift+7 move container to workspace number 27; workspace number 27
+bindsym $mod+Shift+8 move container to workspace number 28; workspace number 28
+bindsym $mod+Shift+9 move container to workspace number 29; workspace number 29
+
+mode "left" {
+    bindsym $mod+1 workspace number 11
+    bindsym $mod+2 workspace number 12
+    bindsym $mod+3 workspace number 13
+    bindsym $mod+4 workspace number 14
+    bindsym $mod+5 workspace number 15
+    bindsym $mod+6 workspace number 16
+    bindsym $mod+7 workspace number 17
+    bindsym $mod+8 workspace number 18
+    bindsym $mod+9 workspace number 19
+
+    bindsym $mod+Shift+1 move container to workspace number 11; workspace number 11
+    bindsym $mod+Shift+2 move container to workspace number 12; workspace number 12
+    bindsym $mod+Shift+3 move container to workspace number 13; workspace number 13
+    bindsym $mod+Shift+4 move container to workspace number 14; workspace number 14
+    bindsym $mod+Shift+5 move container to workspace number 15; workspace number 15
+    bindsym $mod+Shift+6 move container to workspace number 16; workspace number 16
+    bindsym $mod+Shift+7 move container to workspace number 17; workspace number 17
+    bindsym $mod+Shift+8 move container to workspace number 18; workspace number 18
+    bindsym $mod+Shift+9 move container to workspace number 19; workspace number 19
+
+    bindsym Escape mode "default"
+    bindsym $mod+KP_2 mode "default"
+    bindsym $mod+KP_3 mode "right"
+}
+
+mode "right" {
+    bindsym $mod+1 workspace number 31
+    bindsym $mod+2 workspace number 32
+    bindsym $mod+3 workspace number 33
+    bindsym $mod+4 workspace number 34
+    bindsym $mod+5 workspace number 35
+    bindsym $mod+6 workspace number 36
+    bindsym $mod+7 workspace number 37
+    bindsym $mod+8 workspace number 38
+    bindsym $mod+9 workspace number 39
+
+    bindsym $mod+Shift+1 move container to workspace number 31; workspace number 31
+    bindsym $mod+Shift+2 move container to workspace number 32; workspace number 32
+    bindsym $mod+Shift+3 move container to workspace number 33; workspace number 33
+    bindsym $mod+Shift+4 move container to workspace number 34; workspace number 34
+    bindsym $mod+Shift+5 move container to workspace number 35; workspace number 35
+    bindsym $mod+Shift+6 move container to workspace number 36; workspace number 36
+    bindsym $mod+Shift+7 move container to workspace number 37; workspace number 37
+    bindsym $mod+Shift+8 move container to workspace number 38; workspace number 38
+    bindsym $mod+Shift+9 move container to workspace number 39; workspace number 39
+
+    bindsym Escape mode "default"
+    bindsym $mod+KP_1 mode "left"
+    bindsym $mod+KP_2 mode "default"
+}
+
+bindsym $mod+KP_1 mode "left"
+bindsym $mod+KP_3 mode "right"
