@@ -121,10 +121,14 @@ alias darker="sh ~/Dotfiles/i3/brightness-down.sh"
 alias brighter="sh ~/Dotfiles/i3/brightness-up.sh"
 alias louder="sh ~/Dotfiles/i3/volume-up.sh"
 alias quieter="sh ~/Dotfiles/i3/volume-down.sh"
-alias sioyek="XDG_SESSION_TYPE=x11 sioyek --new-window"
+alias sioyek="QT_QPA_PLATFORM=\"wayland;xcb\" sioyek --new-window"
 alias rstudio=rstudio-bin
+alias please=sudo
+alias keyboard="swaymsg input type:keyboard xkb_layout"
 ~/.startup-msg.sh
 
 [ -f "/home/cici/.ghcup/env" ] && source "/home/cici/.ghcup/env" # ghcup-env
 
 source $(ptheno home)/completion.sh
+
+eval $(thefuck --alias)
