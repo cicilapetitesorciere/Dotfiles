@@ -14,6 +14,9 @@ bindsym XF86AudioMute exec "~/.config/sway/volume-mute.sh"
 bindsym XF86AudioRaiseVolume exec "~/.config/sway/volume-up.sh"
 bindsym XF86AudioLowerVolume exec "~/.config/sway/volume-down.sh"
 
+workspace 1 output HDMI-A-1
+workspace 2 output eDP-1
+
 exec_always "~/.config/sway/djidji/autostart.sh"
 
 exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
