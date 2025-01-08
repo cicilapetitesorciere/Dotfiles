@@ -37,12 +37,19 @@ gaps inner 10
 # program launchers
 # =================
 for_window [app_id="kitty"] fullscreen enable
+for_window [app_id="discord"] floating enable
+for_window [instance="caprine"] floating enable
+for_window [app_id="com.ktechpit.whatsie"] floating enable
+for_window [instance="slack"] floating enable
 
 bindsym $mod+slash exec fuzzel -T "alacritty -e"
 bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+Return exec kitty
 bindsym $mod+n exec firefox --new-window "https://www.google.com/" 
 bindsym $mod+Shift+d exec discord
+bindsym $mod+Shift+f exec caprine
+bindsym $mod+Shift+w exec whatsie
+bindsym $mod+Shift+s exec slack
 
 # ======
 # system
